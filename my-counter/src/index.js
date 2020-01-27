@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import PropTypes from "prop-types";
-//import './clock.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -10,6 +11,7 @@ import PropTypes from "prop-types";
 function Counter(props){
     return (
         <div className="bigCounter">
+            <div className="clender"><FontAwesomeIcon icon={faClock} /></div>
             <div className="four">{props.digitFour}</div>
             <div className="three">{props.digitThree}</div>
             <div className="two">{props.digitTwo}</div>
